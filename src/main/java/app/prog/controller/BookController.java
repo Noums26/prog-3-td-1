@@ -46,6 +46,6 @@ public class BookController {
 
     @DeleteMapping("/books/{bookId}")
     public BookResponse deleteBook(@PathVariable Integer bookId) {
-        return mapper.toRest(service.deleteBook(bookId));
+        return mapper.toRest(service.deleteBook(bookId).getBody());
     }
 }
