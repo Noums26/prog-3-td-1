@@ -23,6 +23,7 @@ public class AuthorEntity {
     @Column(name = "id", nullable = false)
     private int id;
 
+    @Column(unique = true)
     private String name;
     private LocalDate birthDate;
     private String particularity;

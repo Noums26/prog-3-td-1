@@ -22,6 +22,10 @@ public class AuthorService {
         return repository.findAll();
     }
 
+    public AuthorEntity getByName(String name) {
+        return repository.findByName(name);
+    }
+
     public List<AuthorEntity> createAuthor(List<AuthorEntity> toCreate) {
         return repository.saveAll(toCreate);
     }

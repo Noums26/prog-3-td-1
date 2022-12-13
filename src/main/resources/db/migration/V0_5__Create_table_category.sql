@@ -1,5 +1,6 @@
 create table category
 (
     id serial,
-    name varchar
+    name varchar,
+    primary key (id)
 );
